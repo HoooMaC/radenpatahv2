@@ -1,113 +1,104 @@
-import Image from "next/image";
+import styles from "@styles/app.module.css";
 
+import Carousel from "@components/Carousel";
+import Image from "@node_modules/next/image";
+
+import image from '@public/images/15.png'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <>
+        <Carousel></Carousel>
+
+        <section className={styles.homepage}>Hello Next Js</section>
+
+
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div className="row g-5">
+              <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style={{minHeight: "400px"}}>
+                <div className="position-relative h-100">
+                  {/*<img className="img-fluid position-absolute w-100 h-100" src="{{ asset('img/about 1.png') }}"*/}
+                  {/*     alt="" style="object-fit: cover;"/>*/}
+                </div>
+              </div>
+              <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 className="mrp-section-title--start ">Tentang Masjid Raden Patah</h6>
+                <h1 className="mb-4">Welcome to Masjid Raden Patah</h1>
+                <p className="mb-4">Masjid Raden Patah merupakan masjid kampus terbesar yang ada di lingkungan civitas
+                  akademika Universitas Brawijaya. Masjid Raden Patah berdiri sejak tahun 1975 dan hanya menampung
+                  sebanyak 200 jamaah. Masjid ini mengalami pemugaran, dengan meratakan bangunan lama dan memulai
+                  pembangunan masjid yang baru dengan arsitektur bergaya Majapahit. Masjid Raden Patah diresmikan
+                  kembali pada tahun 2018 dan kini dapat menampung sekitar 7.000 jamaah.</p>
+                <p>
+                  Sebagai bagian dari Universitas Brawijaya, visi dan misi Masjid Raden Patah mencerminkan
+                  penerjemahan
+                  dari Tri Dharma Perguruan Tinggi dalam kacamata dakwah. Secara umum kegiatan yang dijalankan
+                  mencakup bidang pendidikan dan pengkaderan, peribadatan dan pelayanan, pengembangan usaha dan
+                  pemberdayaan ekonomi umat. Selanjutnya, insan akademis sebagai ciri khas kampus telah
+                  menginspirasi Masjid Raden Patah untuk
+                  mewujudkan ulul abab atau sosok cendekiawan muslim masa depan yang dapat memajukan peradaban.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div className="row g-5">
+              <div className="col-lg-6 wow fadeInUp  order-lg-last" data-wow-delay="0.1s" style={{minHeight: '400px'}}>
+                <div className="position-relative h-100">
+                  {/*<img className="img-fluid position-absolute w-100 h-100" src="{{ asset('img/about 1.png') }}"*/}
+                  {/*     alt="" style={{objectFit: 'cover'}}/>*/}
+                </div>
+              </div>
+              <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h1 className="mb-4">Visi Masjid Raden Patah</h1>
+                <p>Visi Masjid Raden Patah Universitas Brawijaya adalah “menjadi masjid kampus yang memajukan
+                  peradaban
+                  dengan berbasis pada pengembangan insan dan masyarakat serta intelektualitas Islami”</p>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+                <div className="row gy-2 gx-4 mb-4">
+                  <h1 className="mb-4">Misi Masjid Raden Patah</h1>
+                  <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Menjadikan masjid sebagai
+                    pusat
+                    kegiatan kemahasiswaan dan kemasyarakatan </p>
+                  <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Menjadikan masjid sebagai
+                    tempat rekreasi rohani jamaah.</p>
+                  <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Menjadikan masjid sebagai
+                    tempat merujuk berbagai persoalan keumatan.</p>
+                  <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>Menjadikan masjid sebagai
+                    pusat
+                    studi bagi mahasiswa dan masyarakat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div className="row wow fadeInUp">
+              <h1 className="mrp-section-article-title bg-white text-center text-primary p-3">ARTIKEL</h1>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <div className="mrp-article-box mt-3">
+                <img className="mrp-article-image" src={image} alt="mesjid mrp"/>
+                <div className="mrp-article-content">
+                  <div>
+                    <h2 className="mrp-article-content__title">Menelusuri Sejarah dan Kekuatan Simbolis Masjid Raden
+                      Patah</h2>
+                    <div className="mrp-article-content__body mt-2">Masjid telah menjadi bagian penting dari kehidupan
+                      masyarakat, tidak hanya sebagai tempat ibadah, tetapi juga sebagai ikon keagamaan dan
+                      kebudayaan, serta menjadi titik fokus dalam mengeksplorasi sejarah dan seni bangsa....
+                    </div>
+                  </div>
+                  <a href="/article" className="mrp-article-content__link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
   );
 }

@@ -1,0 +1,40 @@
+.carousel__image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel {
+
+}
+
+.carousel__item {
+  width: fit-content;
+  height: fit-content;
+}
+
+.carousel__item_desc {
+
+}
+
+.carousel__item_title {
+
+}
+
+.carousel__item_subtitle {
+
+}
+
+.carousel_controller {
+  @apply absolute flex flex-col z-20;
+  right: 4rem;
+  top: 50%;
+  /*transform: translateY(-50%);*/
+  z-index: 100;
+  gap: 8px;
+}
+
+.carousel_controller__icon {
+  @apply text-black p-4;
+  border: 1px solid white;
+  border-radius: 2px;
+}
