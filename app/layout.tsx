@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type {Metadata} from "next";
+import {Inter, Nunito} from "next/font/google";
 import "@/styles/globals.css";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
+
+const nunito = Nunito({subsets: ['latin'], variable: '--font-nunito'});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,14 +15,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+                                     children,
+                                   }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
+      <html lang="en">
+      <body className={`${inter.className} ${nunito.variable}`}>
+      <Navbar/>
+      <main>{children}</main>
+      <Footer/>
       </body>
-    </html>
+      </html>
   );
 }

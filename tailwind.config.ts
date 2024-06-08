@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#06bbcc",
+        secondary: "#181d38"
+      },
+      fontFamily: {
+        nunito: ['var(--font-nunito)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
