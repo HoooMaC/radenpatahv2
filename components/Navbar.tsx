@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <nav className={styles.navbar}>
         <Link href={"/"} className="navbar__logo">
-          <h2>Masjid Raden Patah</h2>
+          <h2 className="font-nunito text-primary text-2xl font-extrabold">Masjid Raden Patah</h2>
         </Link>
 
         <div className={styles.navbar__list} id="navbarCollapse">
